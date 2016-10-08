@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <link rel="shortcut icon" href="google_logo.png">
+    <link rel="stylesheet" href="stylesheet.css" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="topBar">
+      <div class="topLink">
+        <a href="#">Gmail</a>
+      </div>
+      <div class="topLink">
+        <a href="#">Images</a>
+      </div>
+      <div class="topLink">
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $(".topLink img").hover(
+              function(){
+                $(this).attr("src","aplicaciones_black.png")}
+              , function(){
+                $(this).attr("src","grey_app.png");
+              });
+          });
+        </script>
+        <a href="#"><img src="grey_app.png" alt="Google Apps" /></a>
+      </div>
+      <div class="topLink">
+        <button type="button" name="signin">Sign in</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <img id="gLogo" src="googlelogo_color_272x92dp.png" alt="Google's logo" />
+      <div class="searchForm">
+        <form action="index.html" method="get">
+          <input id="searchQuery" type="search" name="search">
+          <input class="searchButton" type="submit" name="search" value="Google Search">
+          <input class="searchButton" type="submit" name="search" value="I'm Feeling Lucky">
+        </form>
+      </div>
+      <div class="footer">
+        <div class="footerLeft leftMost">
+          <a href="#">Advertising</a>
+        </div>
+        <div class="footerLeft">
+          <a href="#">Business</a>
+        </div>
+        <div class="footerLeft">
+          <a href="#">About</a>
+        </div>
+        <div class="footerRight">
+          <a href="#">Settings</a>
+        </div>
+        <div class="footerRight">
+          <a href="#">Terms</a>
+        </div>
+        <div class="footerRight">
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
