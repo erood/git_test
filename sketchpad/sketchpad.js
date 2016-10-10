@@ -6,7 +6,7 @@
 
 
 $(function() {
-	var dimension = 16;								// default box size
+	var dimension = 80;								// default box size
 	var boxSize; // = Math.floor( 960 / dimension );	// pixels per box
 
 	var container$ = $('#container');				// Since we need to keep referencing this, cache the selection here once and for all.
@@ -34,7 +34,7 @@ $(function() {
 		dimension = prompt('How many boxes? RETURN for default)');
 
 		if ( isNaN(dimension)  || dimension < 1 || dimension > 128 ) {
-			dimension = ((whichButton === 5) ? 3 : 16);		// default for images is 3x3 instead of 16x16
+			dimension = ((whichButton === 5) ? 3 : 80);		// default for images is 3x3 instead of 16x16
 		}
 		new_grid(dimension);
 		handle(whichButton);

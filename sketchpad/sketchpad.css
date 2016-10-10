@@ -14,7 +14,7 @@ body {
 
 header, footer {
 	background-color: #191512;
-	color: #dcddd8;
+	color: #db5c13;
 	text-align: center;
 	margin: 10px;
 	-webkit-border-radius: 26px 26px 26px 26px;
@@ -33,7 +33,7 @@ footer {
 }
 
 .box {
-	background-color: #354b5e;
+	background-color: #070707;
     float: left;
 
 	-webkit-box-sizing: border-box;		/* ensures border doesnt add to width */
